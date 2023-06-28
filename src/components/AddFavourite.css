@@ -1,0 +1,7 @@
+.favourite-btn {
+    color: grey;
+}
+
+.favourite-btn:hover {
+    color: white;
+}

@@ -1,0 +1,67 @@
+body {
+    background: black;
+    color: white;
+
+}
+
+.movie-app>.row {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+}
+
+.row>* {
+    flex-shrink: 0;
+    width: auto;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+}
+
+.row::-webkit-scrollbar {
+    display: none;
+}
+
+.image-container {
+    position: relative;
+    transition: 0.3s;
+}
+
+.image-container:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    width: 93%;
+    background: rgba(15, 14, 14, 0.79);
+    height: 50px;
+    transition: 0.5s ease;
+    opacity: 0;
+    bottom: 0;
+    font-size: medium;
+    text-align: center;
+}
+
+.footer {
+    padding: 20px 0;
+    font-size: 14px;
+    transition: all 0.3s;
+    border-top: 1px solid #cddfff;
+}
+
+.footer .copyright {
+    text-align: center;
+    color: #e5e8ed;
+}
+
+.footer .credits {
+    padding-top: 5px;
+    text-align: center;
+    font-size: 13px;
+    color: #5e6065;
+}
