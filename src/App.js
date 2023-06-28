@@ -7,7 +7,6 @@ import SearchBox from './components/SearchBox';
 import AddFavourite from './components/AddFavourite';
 import RemoveFavourite from './components/RemoveFavourite';
 
-
 const App = () => {
     // array of objects
     const [movies, setmovie] = useState([]);
@@ -21,7 +20,6 @@ const App = () => {
 
     const movieRequest = async (searchValue) => {
         const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=${process.env.API_KEY}`;
-
         const response = await fetch(url);
         const responsejson = await response.json();
         // console.log(responsejson);
